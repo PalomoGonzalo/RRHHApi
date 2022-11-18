@@ -50,3 +50,12 @@ C:\RRHHApi\RRHH.Api\RRHH.Api\obj\Debug\net6.0\refint\RRHH.Api.dll
 C:\RRHHApi\RRHH.Api\RRHH.Api\obj\Debug\net6.0\RRHH.Api.pdb
 C:\RRHHApi\RRHH.Api\RRHH.Api\obj\Debug\net6.0\RRHH.Api.genruntimeconfig.cache
 C:\RRHHApi\RRHH.Api\RRHH.Api\obj\Debug\net6.0\ref\RRHH.Api.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\RRHHApi\RRHH.Api\RRHH.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
