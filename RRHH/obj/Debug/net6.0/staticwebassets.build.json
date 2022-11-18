@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qJBgkHACtXDMYue+kf3FK48xBspIZYDcoBdajKf+8EI=",
+  "Source": "RRHH.API",
+  "BasePath": "_content/RRHH.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
