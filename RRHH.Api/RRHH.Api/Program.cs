@@ -76,6 +76,8 @@ builder.Services.Configure<ContraseñaOpciones>(section);
 
 
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<IContraseñaHassRepositorio, ContraseñaHassRepositorio>();
+builder.Services.AddScoped<IUsuarioContraseñaRepositorio, UsuarioContraseñaRepositorio>();
 
 var app = builder.Build();
 

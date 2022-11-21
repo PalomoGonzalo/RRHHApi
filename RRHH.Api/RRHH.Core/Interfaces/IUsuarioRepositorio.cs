@@ -10,6 +10,8 @@ namespace RRHH.Core.Interfaces
     public interface IUsuarioRepositorio
     {
         Task<IEnumerable<UsuarioDTO>> ObtenerUsuarios();
+        String GenerarToken(UserLoginDTO seguridad);
+        Task<UsuarioDTO> ObtenerUsuarioPorId(int id);
 
     }
 }

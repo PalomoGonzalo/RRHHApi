@@ -16,13 +16,16 @@ namespace RRHH.API.Controllers
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioRepositorio _user;
+        private readonly IUsuarioContraseñaRepositorio _contraseña;
 
-        public UsuarioController(IUsuarioRepositorio user)
+        public UsuarioController(IUsuarioRepositorio user, IUsuarioContraseñaRepositorio contraseña)
         {
             _user = user;
+            _contraseña = contraseña;
         }
-        [Authorize]
 
+
+        [Authorize]
         [HttpGet("ObtenerUsuarios")]
         public async Task<IActionResult> ObtenerUsuarios()
         {
@@ -30,6 +33,43 @@ namespace RRHH.API.Controllers
             return Ok(usuarios);    
             
         }
+
+
+        [HttpPost("CrearContraseñaUsuario")]
+        public async Task<IActionResult> CrearContraseñaUsuario([FromBody]UserLoginDTO user)
+        {
+            if(user==null)
+            {
+                return BadRequest("Erroe en el payload");
+            }
+
+            var usuario = await _user.ObtenerUsuarioPorId(user.IdUsuario);
+            if(usuario == null)
+            {
+                return BadRequest("No existe el usuario en el sistema");
+            }
+
+            var contraseñaUsuarioCreado = await _contraseña.CrearUsuarioContraseña(user,usuario.IdSucursal);
+
+            return Ok($"Se creo correctamente el usuario {contraseñaUsuarioCreado.IdUsuario}");
+
+        }
+
+        [HttpPost("Login")]
+        public  async Task <IActionResult> Login([FromBody] UserLoginDTO user)
+        {
+            if (user == null)
+                return BadRequest("Error datos no validos");
+            var token = await _contraseña.Autenticacion(user);
+            if (token == null)
+            {
+                return BadRequest("error en el usuario o contrase�a ");
+            }
+            
+            return Ok(token);
+        }
+
+
 
 
     }

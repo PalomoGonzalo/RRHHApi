@@ -5,7 +5,7 @@ using RRHH.Infraestructura.Options;
 
 namespace RRHH.Infraestructura.Repositorio
 {
-    public class ContraseñaHassRepositorio : IContraseñaRepositorio
+    public class ContraseñaHassRepositorio : IContraseñaHassRepositorio
     {
         
         private readonly ContraseñaOpciones _config;

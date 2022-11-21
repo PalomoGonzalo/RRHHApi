@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RRHH.Infraestructura
-build_property.ProjectDir = C:\RRHHApi\RRHH.Api\RRHH.Infraestructura\
+build_property.ProjectDir = /home/matias/Documentos/RRHH/RRHHApi/RRHH.Api/RRHH.Infraestructura/

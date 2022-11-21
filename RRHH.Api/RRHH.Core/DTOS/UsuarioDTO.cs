@@ -11,5 +11,6 @@ namespace RRHH.Core.DTOS
         public int IdUSuario { get; set; }
         public string Nombres { get; set; }
         public int activo { get; set; }
+        public int IdSucursal { get; set; }
     }
 }
